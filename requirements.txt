@@ -1,1 +1,4 @@
-viktor==14.19.0
+streamlit
+pandas
+fpdf
+google-generativeai

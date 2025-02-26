@@ -129,7 +129,7 @@ if 'split_option' not in st.session_state:
 def compliance_chatbot(user_query):
     """ Generates compliance answers using Gemini AI. """
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(user_query)
         return response.text
     except Exception as e:

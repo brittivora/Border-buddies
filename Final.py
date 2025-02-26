@@ -138,7 +138,7 @@ def compliance_chatbot(user_query):
 def get_generated_regulation_updates(sender_country, recipient_country, selected_items):
     """ Uses Gemini AI to generate compliance updates and provide news links. """
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         
         prompt = f"""
         You are a global shipping compliance expert. Provide the latest shipping regulations and restrictions for shipping from {sender_country} to {recipient_country}.
